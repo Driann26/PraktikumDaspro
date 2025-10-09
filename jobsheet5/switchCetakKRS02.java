@@ -1,12 +1,12 @@
-import java.util.scanner;
+import java.util.Scanner;
 public class switchCetakKRS02 {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-
-        System.out.println("---Print KRS SIADAK---");
-        System.out.println("Enter current Semester: ");
+        Scanner sc  = new Scanner(System.in);
+        System.out.println("---Print KRS Siakad---");
+        System.out.print("Enter current semester: ");
         int semester = sc.nextInt();
 
+        
         switch (semester) {
             case 1:
                 System.out.println("KRS Semester 1 is displayed");
@@ -16,7 +16,7 @@ public class switchCetakKRS02 {
                 break;
             case 3:
                 System.out.println("KRS Semester 3 is displayed");
-                break
+                break;
             case 4:
                 System.out.println("KRS Semester 4 is displayed");
                 break;
@@ -34,6 +34,11 @@ public class switchCetakKRS02 {
                 break;
             default:
                 System.out.println("Invalid Semester");
-        }
+        
+        
+        sc.close();}
+        
+
+        
     }
 }

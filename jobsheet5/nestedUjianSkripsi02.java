@@ -1,7 +1,7 @@
 import java.util.Scanner;
 public class nestedUjianSkripsi02 {
     public static void main(String[] args){
-        Scanner sc = new (System.in);
+        Scanner sc = new Scanner(System.in);
          
         String message;
 
@@ -13,6 +13,8 @@ public class nestedUjianSkripsi02 {
 
         System.out.print("Enter the number of guidance logs with Supervisor 2: ");
         int supervisor2 = sc.nextInt();
+
+        boolean free = compensationStatus.equalsIgnoreCase("Y") || compensationStatus.equalsIgnoreCase("Yes");
 
         if (free) {
             if (supervisor1 >= 8 && supervisor2 >= 4) {
@@ -29,6 +31,7 @@ public class nestedUjianSkripsi02 {
         }
 
         System.out.println(message);
+        sc.close();
     }
 }
 
