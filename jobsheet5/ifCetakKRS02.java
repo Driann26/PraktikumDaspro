@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class ifcetakKRSNoPresensi {
+public class ifcetakKRS02 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
